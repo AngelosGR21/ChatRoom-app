@@ -1,0 +1,69 @@
+:root{
+  --a : #151515;
+  --c: #80D39B;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--a) ;
+  color : var(--a);
+}
+
+.lobby{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.header{
+  margin-top: 2em;
+  font-size: 1.8rem;
+  margin-bottom : 6em;
+  color: var(--c);
+}
+.lobby-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--c);
+  width: 60%; 
+  height: 25%;
+  padding: 50px;
+  border-radius: 10px;
+}
+.lobby-form .inputbox {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 50px;
+}
+.lobby-form .inputbox input {
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.lobby-form .inputbox span {
+  position: absolute;
+  top: -23px;
+  left: -10px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.join-room-button{
+  padding: 0.5em 1.2em;
+  background-color: var(--a);
+  color: var(--c);
+  border-radius: 2em;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.join-room-button:hover{
+  color: white;
+}
